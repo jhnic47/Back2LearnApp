@@ -127,11 +127,11 @@ namespace Back2LearnApp.ViewModels
                 if (CurrentCountry.GeonameId == SelectedCountry.GeonameId)
                 {
                     Score += points;
-                    ResultMessage = "¡Correct! =)";
+                    ResultMessage = "Correct =) " + SelectedCountry.CountryName;
                 }
                 else
                 {
-                    ResultMessage = "¡Incorrect! =(";
+                    ResultMessage = "Incorrect =( " + currentCountry.CountryName;
                 }
 
                 await GenerateNewQuestion();
